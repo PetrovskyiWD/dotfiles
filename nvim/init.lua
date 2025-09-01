@@ -32,4 +32,5 @@ require('lazy').setup {
   require 'plugins.indent-blankline', --indent vertical line
   require 'plugins.misc', -- miscellaneous small plugins
   require 'plugins.vim-tmux-navigator', -- tmux/vim navigator
+  require 'plugins.comment', -- comments
 }
