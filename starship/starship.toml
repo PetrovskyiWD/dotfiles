@@ -36,7 +36,8 @@ style = "bold #C8C093 bg:#2D4F67"
 format = "[  $branch ]($style)"
 
 [git_status]
-style = "bold #C8C093 bg:#7E9CD8"
+style = "bold #C0A36E bg:#2D4F67"
+format = '([❲$all_status$ahead_behind❳ ]($style))'
 
 [nodejs]
 style = "bold #c5c9c5 bg:#393836"
