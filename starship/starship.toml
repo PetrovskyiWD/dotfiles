@@ -1,0 +1,52 @@
+format = """
+[░▒▓](#2D4F67)\
+[](fg:#2D4F67 bg:#957FB8)\
+$username\
+[](fg:#957FB8 bg:#7E9CD8)\
+$directory\
+[](fg:#7E9CD8 bg:#2D4F67)\
+$git_branch\
+$git_status\
+[](fg:#2D4F67 bg:#393836)\
+$nodejs\
+$rust\
+$golang\
+[ ](fg:#363646)\
+$character
+"""
+
+[character]
+success_symbol = "[❯](bold #98BB6C)"
+error_symbol = "[❯](bold #E82424)"
+
+[username]
+show_always = true
+style_user = "bold #DCD7BA bg:#957FB8"
+style_root = "bold #DCD7BA bg:#957FB8"
+format = "[🐧$user ]($style)"
+
+[directory]
+style = "bold #DCD7BA bg:#7E9CD8"
+format = "[ 🗁 $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+style = "bold #C8C093 bg:#2D4F67"
+format = "[  $branch ]($style)"
+
+[git_status]
+style = "bold #C0A36E bg:#2D4F67"
+format = '([❲$all_status$ahead_behind❳ ]($style))'
+
+[nodejs]
+style = "bold #c5c9c5 bg:#393836"
+format = "[  $version ]($style)"
+
+[rust]
+style = "bold #DCD7BA bg:#393836"
+format = "[  $version ]($style)"
+
+[golang]
+style = "bold #DCD7BA bg:#393836"
+format = "[  $version ]($style)"
